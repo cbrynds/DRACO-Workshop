@@ -1,0 +1,6 @@
+[submodule "rtla-synthesis"]
+	path = rtla-synthesis
+	url = https://github.com/cbrynds/rtla-synthesis.git
+[submodule "vc-formal-dpv-scripts"]
+	path = vc-formal-dpv-scripts
+	url = https://github.com/cbrynds/vc-formal-dpv-scripts.git
