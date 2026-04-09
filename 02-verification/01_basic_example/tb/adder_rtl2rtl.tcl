@@ -1,14 +1,14 @@
 set_fml_appmode DPV
 
 set N 32
-set SPEC_NAME "adder"
+set SPEC_NAME "adder_behavioral"
 set IMPL_NAME "adder"
 
-proc compile_spec {} { 
-    global SPEC_NAME
-    create_design -name spec -top DPV_wrapper -cov 
-    cppan -I. "../cpp/${SPEC_NAME}.cpp"
-    compile_design spec  
+proc compile_spec {} {
+    global N SPEC_NAME
+    create_design -name spec -top ${SPEC_NAME}
+    vcs -sverilog -pvalue+N=${N} "../rtl/${SPEC_NAME}.sv"
+    compile_design spec
 }
 
 proc compile_impl {} {
@@ -35,10 +35,6 @@ proc global_assumes {} {
 
     map_by_name -inputs -specphase 1 -implphase 1
     map_by_name -outputs -specphase 1 -implphase 1
-
-    assume spec.x(1) < (1 << ${N})
-    assume spec.y(1) < (1 << ${N})
-    assume spec.cin(1) < 2
 }
 
 proc ual {} {
