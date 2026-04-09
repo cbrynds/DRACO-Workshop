@@ -14,7 +14,7 @@ proc compile_spec {} {
 proc compile_impl {} {
     global IMPL_NAME N
     create_design -name impl -top ${IMPL_NAME}
-    vcs -sverilog -pvalue+N=${N} "../../../01-design/src/rtl/${IMPL_NAME}.sv"
+    vcs -sverilog -pvalue+N=${N} "../rtl/${IMPL_NAME}.sv"
     compile_design impl
 }
 
