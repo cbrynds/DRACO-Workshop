@@ -9,7 +9,7 @@ In this workshop, we will physically implement the four designs for our LSOR spe
 1. Set the default parameter of each module to N=32 in order to synthesize a 32b design. It is important that the top module name matches the name of the file in which it is located. If you did not have the chance to implement each design, you may use the design files provided under `01-design/rtl`.
 
 ### Copy Designs
-2. Copy the RTL files of each LSOR design into `synthesis_32b/<design_name>/data/rtl` 
+2. Create a new directory `rtl` under `synthesis_32b/<design_name>/data/` and copy in the RTL files of each LSOR design.
 
 ### Launch the Tool
 3. Navigate inside the copied directory and run
