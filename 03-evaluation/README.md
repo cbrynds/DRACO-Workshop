@@ -12,7 +12,7 @@ In this workshop, we will physically implement the four designs for our LSOR spe
 2. Create a new directory `rtl` under `synthesis_32b/<design_name>/data/` and copy in the RTL files of each LSOR design.
 
 ### Launch the Tool
-3. Navigate inside the copied directory and run
+3. Navigate inside the synthesis directory for each of the four designs (e.g. `cd synthesis_32b/behavioral`) and run
 
 `rtl_shell -f pareto_synthesis.tcl -x "set DESIGN_NAME <top module name>"`
 
