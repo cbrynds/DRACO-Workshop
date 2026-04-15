@@ -1,0 +1,58 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : remove_lso_behavioral
+Version: U-2022.12-SP6
+Date   : Thu Apr  2 09:14:28 2026
+****************************************
+Information: Timer using 'Estimated Delay Calculation'. (TIM-050)
+
+  Startpoint: x[1] (input port clocked by clk)
+  Endpoint: x_no_lso[31] (output port clocked by clk)
+  Mode: func
+  Corner: ss0p95v125c
+  Scenario: func.ss0p95v125c
+  Path Group: FEEDTHROUGH
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.55      0.55
+  input external delay                             0.50      1.05 r
+  x[1] (in)                                        0.00      1.05 r
+  ctmi_137/Y (OR3X1_HVT)                           0.06      1.11 r
+  ctmi_136/Y (OR3X1_HVT)                           0.06      1.16 r
+  ctmi_135/Y (OR3X1_HVT)                           0.06      1.22 r
+  ctmi_134/Y (OR3X1_HVT)                           0.06      1.28 r
+  ctmi_133/Y (OR3X1_HVT)                           0.06      1.34 r
+  ctmi_132/Y (OR3X1_HVT)                           0.06      1.39 r
+  ctmi_131/Y (OR3X1_HVT)                           0.06      1.45 r
+  ctmi_130/Y (OR3X1_HVT)                           0.06      1.51 r
+  ctmi_129/Y (OR3X1_HVT)                           0.06      1.57 r
+  ctmi_128/Y (OR3X1_HVT)                           0.06      1.62 r
+  ctmi_127/Y (OR3X1_HVT)                           0.06      1.68 r
+  ctmi_126/Y (OR3X1_HVT)                           0.06      1.74 r
+  ctmi_125/Y (OR3X1_HVT)                           0.06      1.79 r
+  ctmi_124/Y (OR3X1_HVT)                           0.06      1.85 r
+  ctmi_123/Y (OR2X1_HVT)                           0.05      1.90 r
+  ctmi_122/Y (OA21X1_HVT)                          0.05      1.95 r
+  x_no_lso[31] (out)                               0.00      1.95 r
+  data arrival time                                          1.95
+
+  clock clk (rise edge)                            3.28      3.28
+  clock network delay (ideal)                      0.50      3.78
+  clock uncertainty                               -0.20      3.58
+  output external delay                           -0.60      2.98
+  data required time                                         2.98
+  ------------------------------------------------------------------------
+  data required time                                         2.98
+  data arrival time                                         -1.95
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.03
+
+
+1

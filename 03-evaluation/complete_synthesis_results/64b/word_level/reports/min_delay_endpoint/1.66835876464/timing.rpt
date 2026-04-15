@@ -1,0 +1,48 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : remove_lso_word_level
+Version: U-2022.12-SP6
+Date   : Thu Jan 22 13:29:53 2026
+****************************************
+Information: Timer using 'Estimated Delay Calculation'. (TIM-050)
+
+  Startpoint: x[30] (input port clocked by clk)
+  Endpoint: x_no_lso[62] (output port clocked by clk)
+  Mode: func
+  Corner: ss0p95v125c
+  Scenario: func.ss0p95v125c
+  Path Group: FEEDTHROUGH
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.55      0.55
+  input external delay                             0.50      1.05 f
+  x[30] (in)                                       0.00      1.05 f
+  A606/Y (NOR4X1_LVT)                              0.08      1.13 r
+  A728/Y (NAND4X0_LVT)                             0.04      1.17 f
+  ZBUF_28_inst_761/Y (NBUFFX2_LVT)                 0.04      1.20 f
+  A737/Y (OR3X2_LVT)                               0.05      1.26 f
+  HFSBUF_911_759/Y (NBUFFX16_LVT)                  0.05      1.30 f
+  A598/Y (OA21X2_RVT)                              0.06      1.36 f
+  x_no_lso[62] (out)                               0.00      1.36 f
+  data arrival time                                          1.36
+
+  clock clk (rise edge)                            1.67      1.67
+  clock network delay (ideal)                      0.50      2.17
+  clock uncertainty                               -0.20      1.97
+  output external delay                           -0.60      1.37
+  data required time                                         1.37
+  ------------------------------------------------------------------------
+  data required time                                         1.37
+  data arrival time                                         -1.36
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.01
+
+
+1

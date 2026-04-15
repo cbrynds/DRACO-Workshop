@@ -1,0 +1,53 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : remove_lso_word_level
+Version: U-2022.12-SP6
+Date   : Thu Jan 22 12:24:17 2026
+****************************************
+Information: Timer using 'Estimated Delay Calculation'. (TIM-050)
+
+  Startpoint: x[0] (input port clocked by clk)
+  Endpoint: x_no_lso[31] (output port clocked by clk)
+  Mode: func
+  Corner: ss0p95v125c
+  Scenario: func.ss0p95v125c
+  Path Group: FEEDTHROUGH
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.55      0.55
+  input external delay                             0.50      1.05 r
+  x[0] (in)                                        0.00      1.05 r
+  sub_6/ctmi_16/Y (OR2X1_RVT)                      0.05      1.10 r
+  sub_6/ctmi_15/Y (OR3X1_HVT)                      0.06      1.16 r
+  sub_6/ctmi_14/Y (OR4X2_RVT)                      0.10      1.26 r
+  sub_6/ctmi_9/Y (OR4X2_RVT)                       0.10      1.37 r
+  sub_6/ctmi_8/Y (OR4X1_RVT)                       0.10      1.47 r
+  sub_6/ctmi_7/Y (OR2X1_RVT)                       0.05      1.52 r
+  sub_6/ctmi_6/Y (OR2X1_RVT)                       0.05      1.57 r
+  sub_6/ctmi_5/Y (OR2X1_HVT)                       0.05      1.62 r
+  sub_6/ctmi_4/Y (OR2X1_RVT)                       0.05      1.67 r
+  sub_6/ctmi_3/Y (OR2X1_RVT)                       0.05      1.71 r
+  A109/Y (AND2X1_RVT)                              0.04      1.75 r
+  x_no_lso[31] (out)                               0.00      1.75 r
+  data arrival time                                          1.75
+
+  clock clk (rise edge)                            2.34      2.34
+  clock network delay (ideal)                      0.50      2.84
+  clock uncertainty                               -0.20      2.64
+  output external delay                           -0.60      2.04
+  data required time                                         2.04
+  ------------------------------------------------------------------------
+  data required time                                         2.04
+  data arrival time                                         -1.75
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.28
+
+
+1

@@ -1,0 +1,20 @@
+****************************************
+Report : report_resources
+Design : remove_lso_word_level
+Version: U-2022.12-SP6
+Date   : Thu Jan 22 13:45:50 2026
+****************************************
+--------------------------------
+ Design : remove_lso_word_level 
+--------------------------------
+
+ Cell : sub_6 
+--------------
+
+   Module                :  DW01_sub_J3_H0_D1                 
+   Parameters            :  width=64                          
+   Current Implementation:  pparch(area)                      
+   Contained Operations  :  sub_6(remove_lso_word_level.sv:6) 
+   Has Tree              :  No                                
+
+1

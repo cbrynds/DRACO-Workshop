@@ -1,0 +1,48 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : remove_lso_linear
+Version: U-2022.12-SP6
+Date   : Thu Jan 22 13:18:56 2026
+****************************************
+Information: Timer using 'Estimated Delay Calculation'. (TIM-050)
+
+  Startpoint: x[34] (input port clocked by clk)
+  Endpoint: x_no_lso[55] (output port clocked by clk)
+  Mode: func
+  Corner: ss0p95v125c
+  Scenario: func.ss0p95v125c
+  Path Group: FEEDTHROUGH
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.55      0.55
+  input external delay                             0.50      1.05 r
+  x[34] (in)                                       0.00      1.05 r
+  A471/Y (NOR4X1_LVT)                              0.08      1.13 f
+  ctmTdsLR_2_625/Y (NAND2X0_LVT)                   0.03      1.16 r
+  ctmTdsLR_3_626/Y (OR2X2_LVT)                     0.06      1.22 r
+  A521/Y (OR2X2_LVT)                               0.05      1.27 r
+  ctmi_236/Y (OR2X2_LVT)                           0.05      1.31 r
+  ctmi_235/Y (OA21X2_LVT)                          0.05      1.37 r
+  x_no_lso[55] (out)                               0.00      1.37 r
+  data arrival time                                          1.37
+
+  clock clk (rise edge)                            1.12      1.12
+  clock network delay (ideal)                      0.50      1.62
+  clock uncertainty                               -0.20      1.42
+  output external delay                           -0.60      0.82
+  data required time                                         0.82
+  ------------------------------------------------------------------------
+  data required time                                         0.82
+  data arrival time                                         -1.37
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.54
+
+
+1

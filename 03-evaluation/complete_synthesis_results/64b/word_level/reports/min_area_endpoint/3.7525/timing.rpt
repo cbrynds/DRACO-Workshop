@@ -1,0 +1,68 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : remove_lso_word_level
+Version: U-2022.12-SP6
+Date   : Thu Jan 22 13:18:08 2026
+****************************************
+Information: Timer using 'Estimated Delay Calculation'. (TIM-050)
+
+  Startpoint: x[1] (input port clocked by clk)
+  Endpoint: x_no_lso[63] (output port clocked by clk)
+  Mode: func
+  Corner: ss0p95v125c
+  Scenario: func.ss0p95v125c
+  Path Group: FEEDTHROUGH
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.55      0.55
+  input external delay                             0.50      1.05 r
+  x[1] (in)                                        0.00      1.05 r
+  sub_6/ctmi_37/Y (OR2X1_HVT)                      0.05      1.10 r
+  sub_6/ctmi_36/Y (OR3X1_HVT)                      0.06      1.16 r
+  sub_6/ctmi_35/Y (OR4X2_RVT)                      0.10      1.26 r
+  sub_6/ctmi_30/Y (OR4X1_HVT)                      0.10      1.37 r
+  sub_6/ctmi_29/Y (OR4X2_HVT)                      0.10      1.47 r
+  sub_6/ctmi_22/Y (OR3X1_RVT)                      0.06      1.53 r
+  sub_6/ctmi_21/Y (OR2X1_HVT)                      0.05      1.58 r
+  sub_6/ctmi_20/Y (OR2X1_HVT)                      0.05      1.63 r
+  sub_6/ctmi_19/Y (OR2X1_RVT)                      0.05      1.68 r
+  sub_6/ctmi_18/Y (OR2X1_HVT)                      0.05      1.73 r
+  sub_6/ctmi_17/Y (OR2X1_HVT)                      0.05      1.78 r
+  sub_6/ctmi_16/Y (OR2X1_RVT)                      0.05      1.83 r
+  sub_6/ctmi_15/Y (OR2X1_HVT)                      0.05      1.88 r
+  sub_6/ctmi_14/Y (OR2X1_HVT)                      0.05      1.93 r
+  sub_6/ctmi_13/Y (OR2X1_RVT)                      0.05      1.98 r
+  sub_6/ctmi_12/Y (OR2X1_HVT)                      0.05      2.03 r
+  sub_6/ctmi_11/Y (OR2X1_HVT)                      0.05      2.08 r
+  sub_6/ctmi_10/Y (OR2X1_RVT)                      0.05      2.13 r
+  sub_6/ctmi_9/Y (OR2X1_HVT)                       0.05      2.18 r
+  sub_6/ctmi_8/Y (OR2X1_HVT)                       0.05      2.23 r
+  sub_6/ctmi_7/Y (OR2X2_HVT)                       0.05      2.28 r
+  sub_6/ctmi_6/Y (OR2X1_HVT)                       0.05      2.33 r
+  sub_6/ctmi_5/Y (OR2X1_HVT)                       0.05      2.38 r
+  sub_6/ctmi_4/Y (OR2X2_RVT)                       0.05      2.43 r
+  sub_6/ctmi_3/Y (OR2X1_HVT)                       0.05      2.48 r
+  A229/Y (AND2X1_RVT)                              0.04      2.52 r
+  x_no_lso[63] (out)                               0.00      2.52 r
+  data arrival time                                          2.52
+
+  clock clk (rise edge)                            3.75      3.75
+  clock network delay (ideal)                      0.50      4.25
+  clock uncertainty                               -0.20      4.05
+  output external delay                           -0.60      3.45
+  data required time                                         3.45
+  ------------------------------------------------------------------------
+  data required time                                         3.45
+  data arrival time                                         -2.52
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.94
+
+
+1

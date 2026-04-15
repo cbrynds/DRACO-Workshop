@@ -1,0 +1,76 @@
+****************************************
+Report : qor
+Design : remove_lso_linear
+Version: U-2022.12-SP6
+Date   : Thu Jan 22 13:25:56 2026
+****************************************
+Information: Timer using 'Estimated Delay Calculation'. (TIM-050)
+
+
+Scenario           'func.ss0p95v125c'
+Timing Path Group  'FEEDTHROUGH'
+----------------------------------------
+Levels of Logic:                      6
+Critical Path Length:              0.86
+Critical Path Slack:              -0.02
+Critical Path Clk Period:          1.69
+Total Negative Slack:             -0.27
+No. of Violating Paths:              18
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              0
+Hierarchical Port Count:              0
+Leaf Cell Count:                    207
+Buf/Inv Cell Count:                  38
+Buf Cell Count:                       1
+Inv Cell Count:                      37
+Combinational Cell Count:           207
+   Single-bit Isolation Cell Count:                        0
+   Multi-bit Isolation Cell Count:                         0
+   Isolation Cell Banking Ratio:                           0.00%
+   Single-bit Level Shifter Cell Count:                    0
+   Multi-bit Level Shifter Cell Count:                     0
+   Level Shifter Cell Banking Ratio:                       0.00%
+   Single-bit ELS Cell Count:                              0
+   Multi-bit ELS Cell Count:                               0
+   ELS Cell Banking Ratio:                                 0.00%
+Sequential Cell Count:                0
+   Integrated Clock-Gating Cell Count:                     0
+   Sequential Macro Cell Count:                            0
+   Single-bit Sequential Cell Count:                       0
+   Multi-bit Sequential Cell Count:                        0
+   Sequential Cell Banking Ratio:                          0.00%
+   BitsPerflop:                                            0.00
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:              433.32
+Noncombinational Area:             0.00
+Buf/Inv Area:                     52.35
+Total Buffer Area:                 2.54
+Total Inverter Area:              49.81
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                     723.38
+Net YLength:                    1597.60
+----------------------------------------
+Cell Area (netlist):                            433.32
+Cell Area (netlist and physical only):          433.32
+Net Length:                     2320.98
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:               281
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+----------------------------------------
+
+1

@@ -1,0 +1,23 @@
+****************************************
+Report : area
+Design : remove_lso_word_level
+Version: U-2022.12-SP6
+Date   : Thu Jan 22 13:32:41 2026
+****************************************
+
+Number of ports:                          128
+Number of nets:                           304
+Number of cells:                          234
+Number of combinational cells:            234
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         26
+Number of references:                      47
+
+Combinational area:                    536.50
+Buf/Inv area:                           45.24
+Noncombinational area:                   0.00
+Macro/Black Box area:                    0.00
+
+Total cell area:                       536.50
+1

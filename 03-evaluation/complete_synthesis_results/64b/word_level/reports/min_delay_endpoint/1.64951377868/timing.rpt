@@ -1,0 +1,48 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : remove_lso_word_level
+Version: U-2022.12-SP6
+Date   : Thu Jan 22 13:32:41 2026
+****************************************
+Information: Timer using 'Estimated Delay Calculation'. (TIM-050)
+
+  Startpoint: x[36] (input port clocked by clk)
+  Endpoint: x_no_lso[58] (output port clocked by clk)
+  Mode: func
+  Corner: ss0p95v125c
+  Scenario: func.ss0p95v125c
+  Path Group: FEEDTHROUGH
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.55      0.55
+  input external delay                             0.50      1.05 r
+  x[36] (in)                                       0.00      1.05 r
+  A785/Y (NOR4X1_LVT)                              0.08      1.13 f
+  A786/Y (AND2X2_LVT)                              0.05      1.18 f
+  ctmTdsLR_5_859/Y (NAND2X0_LVT)                   0.04      1.21 r
+  ctmTdsLR_1_855/Y (OR2X2_LVT)                     0.05      1.27 r
+  A831/Y (OR2X1_RVT)                               0.05      1.32 r
+  A710/Y (OA21X1_LVT)                              0.05      1.37 r
+  x_no_lso[58] (out)                               0.00      1.37 r
+  data arrival time                                          1.37
+
+  clock clk (rise edge)                            1.65      1.65
+  clock network delay (ideal)                      0.50      2.15
+  clock uncertainty                               -0.20      1.95
+  output external delay                           -0.60      1.35
+  data required time                                         1.35
+  ------------------------------------------------------------------------
+  data required time                                         1.35
+  data arrival time                                         -1.37
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.02
+
+
+1

@@ -1,0 +1,49 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : remove_lso_word_level
+Version: U-2022.12-SP6
+Date   : Thu Jan 22 12:21:23 2026
+****************************************
+Information: Timer using 'Estimated Delay Calculation'. (TIM-050)
+
+  Startpoint: x[1] (input port clocked by clk)
+  Endpoint: x_no_lso[31] (output port clocked by clk)
+  Mode: func
+  Corner: ss0p95v125c
+  Scenario: func.ss0p95v125c
+  Path Group: FEEDTHROUGH
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.55      0.55
+  input external delay                             0.50      1.05 r
+  x[1] (in)                                        0.00      1.05 r
+  sub_6/ctmi_13/Y (OR2X1_LVT)                      0.05      1.10 r
+  sub_6/ctmi_11/Y (OR2X1_RVT)                      0.05      1.15 r
+  sub_6/ctmi_10/Y (OR3X2_LVT)                      0.06      1.22 r
+  sub_6/ctmi_5/Y (OR4X2_LVT)                       0.11      1.32 r
+  sub_6/ctmi_4/Y (OR4X1_RVT)                       0.10      1.42 r
+  sub_6/ctmi_3/Y (OR2X1_RVT)                       0.05      1.47 r
+  A112/Y (AND2X1_RVT)                              0.04      1.51 r
+  x_no_lso[31] (out)                               0.00      1.51 r
+  data arrival time                                          1.51
+
+  clock clk (rise edge)                            1.97      1.97
+  clock network delay (ideal)                      0.50      2.47
+  clock uncertainty                               -0.20      2.27
+  output external delay                           -0.60      1.67
+  data required time                                         1.67
+  ------------------------------------------------------------------------
+  data required time                                         1.67
+  data arrival time                                         -1.51
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+1

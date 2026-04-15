@@ -1,0 +1,75 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : remove_lso_word_level
+Version: U-2022.12-SP6
+Date   : Thu Jan 22 13:23:57 2026
+****************************************
+Information: Timer using 'Estimated Delay Calculation'. (TIM-050)
+
+  Startpoint: x[2] (input port clocked by clk)
+  Endpoint: x_no_lso[62] (output port clocked by clk)
+  Mode: func
+  Corner: ss0p95v125c
+  Scenario: func.ss0p95v125c
+  Path Group: FEEDTHROUGH
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.55      0.55
+  input external delay                             0.50      1.05 r
+  x[2] (in)                                        0.00      1.05 r
+  sub_6/ctmi_625/Y (OR3X1_HVT)                     0.06      1.11 r
+  sub_6/ctmi_624/Y (OR3X1_HVT)                     0.06      1.16 r
+  sub_6/ctmi_623/Y (OR3X1_RVT)                     0.06      1.22 r
+  sub_6/ctmi_622/Y (OR3X1_HVT)                     0.06      1.28 r
+  sub_6/ctmi_621/Y (OR3X1_HVT)                     0.06      1.34 r
+  sub_6/ctmi_620/Y (OR3X1_LVT)                     0.06      1.39 r
+  sub_6/ctmi_619/Y (OR3X1_HVT)                     0.06      1.45 r
+  sub_6/ctmi_618/Y (OR3X1_HVT)                     0.06      1.51 r
+  sub_6/ctmi_617/Y (OR3X1_RVT)                     0.06      1.57 r
+  sub_6/ctmi_616/Y (OR3X1_HVT)                     0.06      1.62 r
+  sub_6/ctmi_615/Y (OR3X1_HVT)                     0.06      1.68 r
+  sub_6/ctmi_614/Y (OR3X1_RVT)                     0.06      1.74 r
+  sub_6/ctmi_613/Y (OR3X1_HVT)                     0.06      1.79 r
+  sub_6/ctmi_612/Y (OR3X1_HVT)                     0.06      1.85 r
+  sub_6/ctmi_611/Y (OR3X1_RVT)                     0.06      1.91 r
+  sub_6/ctmi_610/Y (OR3X1_HVT)                     0.06      1.97 r
+  sub_6/ctmi_609/Y (OR3X1_HVT)                     0.06      2.02 r
+  sub_6/ctmi_608/Y (OR3X1_RVT)                     0.06      2.08 r
+  sub_6/ctmi_607/Y (OR3X1_HVT)                     0.06      2.14 r
+  sub_6/ctmi_606/Y (OR3X1_HVT)                     0.06      2.20 r
+  sub_6/ctmi_605/Y (OR3X1_RVT)                     0.06      2.25 r
+  sub_6/ctmi_604/Y (OR3X1_HVT)                     0.06      2.31 r
+  sub_6/ctmi_603/Y (OR3X1_HVT)                     0.06      2.37 r
+  sub_6/ctmi_602/Y (OR3X1_RVT)                     0.06      2.42 r
+  sub_6/ctmi_601/Y (OR3X1_HVT)                     0.06      2.48 r
+  sub_6/ctmi_600/Y (OR3X1_HVT)                     0.06      2.54 r
+  sub_6/ctmi_599/Y (OR3X1_HVT)                     0.06      2.60 r
+  sub_6/ctmi_598/Y (OR3X1_HVT)                     0.06      2.65 r
+  sub_6/ctmi_597/Y (OR3X1_HVT)                     0.06      2.71 r
+  sub_6/ctmi_596/Y (OR3X1_HVT)                     0.06      2.77 r
+  A62/Y (NOR2X0_HVT)                               0.05      2.82 f
+  ctmi_64/Y (INVX0_HVT)                            0.02      2.84 r
+  ctmi_719/Y (AND2X1_HVT)                          0.04      2.88 r
+  x_no_lso[62] (out)                               0.00      2.88 r
+  data arrival time                                          2.88
+
+  clock clk (rise edge)                            4.82      4.82
+  clock network delay (ideal)                      0.50      5.32
+  clock uncertainty                               -0.20      5.12
+  output external delay                           -0.60      4.52
+  data required time                                         4.52
+  ------------------------------------------------------------------------
+  data required time                                         4.52
+  data arrival time                                         -2.88
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.64
+
+
+1

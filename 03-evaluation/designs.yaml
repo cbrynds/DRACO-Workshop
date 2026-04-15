@@ -1,0 +1,5 @@
+designs:
+- case_statement
+- bit_level
+- word_level
+- behavioral

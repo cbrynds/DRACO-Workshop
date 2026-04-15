@@ -1,0 +1,47 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : remove_lso_behavioral
+Version: U-2022.12-SP6
+Date   : Thu Apr  2 09:20:17 2026
+****************************************
+Information: Timer using 'Estimated Delay Calculation'. (TIM-050)
+
+  Startpoint: x[17] (input port clocked by clk)
+  Endpoint: x_no_lso[29] (output port clocked by clk)
+  Mode: func
+  Corner: ss0p95v125c
+  Scenario: func.ss0p95v125c
+  Path Group: FEEDTHROUGH
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.55      0.55
+  input external delay                             0.50      1.05 r
+  x[17] (in)                                       0.00      1.05 r
+  ctmTdsLR_1_277/Y (OR2X1_LVT)                     0.05      1.10 r
+  A258/Y (OR2X2_LVT)                               0.05      1.15 r
+  A260/Y (OR2X1_LVT)                               0.05      1.20 r
+  A261/Y (OR3X2_LVT)                               0.07      1.26 r
+  A218/Y (OA21X2_LVT)                              0.05      1.32 r
+  x_no_lso[29] (out)                               0.00      1.32 r
+  data arrival time                                          1.32
+
+  clock clk (rise edge)                            1.21      1.21
+  clock network delay (ideal)                      0.50      1.71
+  clock uncertainty                               -0.20      1.51
+  output external delay                           -0.60      0.91
+  data required time                                         0.91
+  ------------------------------------------------------------------------
+  data required time                                         0.91
+  data arrival time                                         -1.32
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.41
+
+
+1
