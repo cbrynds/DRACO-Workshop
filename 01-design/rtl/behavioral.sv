@@ -1,4 +1,4 @@
-module lsor_behavioral #(parameter N=64) (
+module behavioral #(parameter N=64) (
     input logic [N-1:0] x,
     output logic [N-1:0] x_no_lso
 );

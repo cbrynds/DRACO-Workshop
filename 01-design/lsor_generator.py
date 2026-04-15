@@ -1,5 +1,5 @@
-TEMPLATE = "rtl/lsor_case_statement_template.sv"
-DESIGN = "rtl/lsor_case_statement.sv"
+TEMPLATE = "rtl/case_statement_template.sv"
+DESIGN = "rtl/case_statement.sv"
 
 def rom_generator(N):
     cases = []

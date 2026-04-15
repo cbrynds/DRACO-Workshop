@@ -1,4 +1,4 @@
-module lsor_case_statement (
+module case_statement (
     input logic [32-1:0] x,
     output logic[32-1:0] x_no_lso
 );

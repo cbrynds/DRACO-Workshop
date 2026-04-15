@@ -1,4 +1,4 @@
-module lsor_bit_level #(parameter N=4) (
+module bit_level #(parameter N=4) (
     input logic [N-1:0] x,
     output logic [N-1:0] x_no_lso
 );
